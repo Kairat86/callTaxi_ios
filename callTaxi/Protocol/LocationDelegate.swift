@@ -6,7 +6,11 @@
 //
 
 import Foundation
+import CoreLocation
 
 protocol LocationDelegate {
     func onDetected()
+    func onDenied()
+    func onError(_ error:Error?)
+    func authorizedAways(_ manager:CLLocationManager)
 }

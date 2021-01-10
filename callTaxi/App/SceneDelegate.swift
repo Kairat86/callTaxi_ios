@@ -1,11 +1,14 @@
 import UIKit
 import SwiftUI
 import Foundation
+import UserNotifications
+import BackgroundTasks
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-    
+    let notificationCenter = UNUserNotificationCenter.current()
+
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
@@ -13,9 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Create the SwiftUI view that provides the window contents.        
 //        sharedApplication.delegate?.window??.tintColor = color
-
         let who=UserDefaults.standard.string(forKey: WHO)
-        print("who=>\(who)")
         let contentView = ContentView(who: who)
 
         // Use a UIHostingController as window root view controller.
@@ -42,6 +43,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneWillResignActive(_ scene: UIScene) {
         // Called when the scene will move from an active state to an inactive state.
         // This may occur due to temporary interruptions (ex. an incoming phone call).
+        
     }
 
     func sceneWillEnterForeground(_ scene: UIScene) {
@@ -53,14 +55,41 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
+        print("sceneDidEnterBackground")
+        let st = UserDefaults.standard
+        if !st.bool(forKey: STOPPED) && st.string(forKey: WHO) != PASSENGER{
+
+            let options: UNAuthorizationOptions = [.badge]
+            notificationCenter.requestAuthorization(options: options) {
+                (didAllow, error) in
+                if !didAllow {
+                    print("User has declined notifications")
+                }else{
+                    print("allow")
+                    self.scheduleNotification()
+                }
+            }
+
+        }
+       
+    }
+    
+    func scheduleNotification() {
+        
+        let content = UNMutableNotificationContent()
+
+        content.title = "callTaxi"
+        content.body = "Working in the background"
+        content.badge = 0
+        let identifier = "callTaxi"
+        let request = UNNotificationRequest(identifier: identifier, content: content, trigger: UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false))
+
+        notificationCenter.add(request) { (error) in
+            if let error = error {
+                print("Error \(error.localizedDescription)")
+            }
+        }
+        
     }
 
-
-}
-
-
-struct SceneDelegate_Previews: PreviewProvider {
-    static var previews: some View {
-        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
-    }
 }

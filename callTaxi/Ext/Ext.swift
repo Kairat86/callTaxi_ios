@@ -37,12 +37,6 @@ extension UINavigationBar {
      }
  }
 
-extension View {
-    func configureNavigationBar(_ configure: @escaping (UINavigationBar) -> ()) -> some View {
-        modifier(NavigationConfigurationViewModifier(configure: configure))
-    }
-}
-
 extension UIColor {
     public convenience init?(hex: String) {
         let r, g, b, a: CGFloat

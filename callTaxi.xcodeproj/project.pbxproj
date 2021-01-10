@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A21B0E492569717200CADD3D /* DetectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21B0E482569717200CADD3D /* DetectModel.swift */; };
-		A21F45192549C30A0025ADE1 /* TopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21F45182549C30A0025ADE1 /* TopBarView.swift */; };
-		A22564DB25699F4C00F710E1 /* NavigationConfigurationViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22564DA25699F4C00F710E1 /* NavigationConfigurationViewModifier.swift */; };
+		A21B0E492569717200CADD3D /* StateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21B0E482569717200CADD3D /* StateModel.swift */; };
 		A24086FE254EF55E00F35B67 /* PassengerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24086FD254EF55E00F35B67 /* PassengerView.swift */; };
-		A2408706254F113900F35B67 /* NavigationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2408705254F113900F35B67 /* NavigationConfigurator.swift */; };
 		A240870C254F657800F35B67 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A240870B254F657800F35B67 /* LocationManager.swift */; };
 		A26915C2253C5EE00049892F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A26915C1253C5EE00049892F /* Main.storyboard */; };
 		A26915C8253C6A7B0049892F /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26915C7253C6A7B0049892F /* Constant.swift */; };
+		A2714C5D25A3D518006120E2 /* ModeSelectViewStateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2714C5C25A3D518006120E2 /* ModeSelectViewStateModel.swift */; };
 		A298C6582542FB9B005FB779 /* Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A298C6572542FB9B005FB779 /* Ext.swift */; };
 		A298C66025430726005FB779 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A298C65F25430726005FB779 /* MapView.swift */; };
 		A298C66C25430D9A005FB779 /* Taxist.swift in Sources */ = {isa = PBXBuildFile; fileRef = A298C66B25430D9A005FB779 /* Taxist.swift */; };
 		A298C67125430F23005FB779 /* TaxistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A298C67025430F23005FB779 /* TaxistView.swift */; };
 		A298C67625431726005FB779 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A298C67525431726005FB779 /* ListView.swift */; };
+		A299FC5025A3A66400319871 /* PassengerViewStateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A299FC4F25A3A66400319871 /* PassengerViewStateModel.swift */; };
+		A2B3E2AB2578B208007A5DA3 /* local.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2B3E2AA2578B208007A5DA3 /* local.plist */; };
 		A2CB0CB925640308001C126D /* LocationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CB0CB825640308001C126D /* LocationDelegate.swift */; };
 		A2D58724254973AB00D8E61C /* ModeSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D58723254973AB00D8E61C /* ModeSelectView.swift */; };
 		A2DC76012542DEB800E942A9 /* DriverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DC76002542DEB800E942A9 /* DriverView.swift */; };
@@ -51,19 +51,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A21B0E482569717200CADD3D /* DetectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectModel.swift; sourceTree = "<group>"; };
-		A21F45182549C30A0025ADE1 /* TopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarView.swift; sourceTree = "<group>"; };
-		A22564DA25699F4C00F710E1 /* NavigationConfigurationViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationConfigurationViewModifier.swift; sourceTree = "<group>"; };
+		A21B0E482569717200CADD3D /* StateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateModel.swift; sourceTree = "<group>"; };
 		A24086FD254EF55E00F35B67 /* PassengerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerView.swift; sourceTree = "<group>"; };
-		A2408705254F113900F35B67 /* NavigationConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationConfigurator.swift; sourceTree = "<group>"; };
 		A240870B254F657800F35B67 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		A26915C1253C5EE00049892F /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A26915C7253C6A7B0049892F /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		A2714C5C25A3D518006120E2 /* ModeSelectViewStateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeSelectViewStateModel.swift; sourceTree = "<group>"; };
 		A298C6572542FB9B005FB779 /* Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ext.swift; sourceTree = "<group>"; };
 		A298C65F25430726005FB779 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		A298C66B25430D9A005FB779 /* Taxist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Taxist.swift; sourceTree = "<group>"; };
 		A298C67025430F23005FB779 /* TaxistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxistView.swift; sourceTree = "<group>"; };
 		A298C67525431726005FB779 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		A299FC4F25A3A66400319871 /* PassengerViewStateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerViewStateModel.swift; sourceTree = "<group>"; };
+		A2B3E2AA2578B208007A5DA3 /* local.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = local.plist; sourceTree = "<group>"; };
 		A2CB0CB825640308001C126D /* LocationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDelegate.swift; sourceTree = "<group>"; };
 		A2D58723254973AB00D8E61C /* ModeSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeSelectView.swift; sourceTree = "<group>"; };
 		A2DC76002542DEB800E942A9 /* DriverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverView.swift; sourceTree = "<group>"; };
@@ -108,22 +108,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A22564D525698A8C00F710E1 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				A2408705254F113900F35B67 /* NavigationConfigurator.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		A22564D925699F3200F710E1 /* Modifier */ = {
-			isa = PBXGroup;
-			children = (
-				A22564DA25699F4C00F710E1 /* NavigationConfigurationViewModifier.swift */,
-			);
-			path = Modifier;
-			sourceTree = "<group>";
-		};
 		A240870A254F656400F35B67 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,9 +155,19 @@
 			isa = PBXGroup;
 			children = (
 				A298C66B25430D9A005FB779 /* Taxist.swift */,
-				A21B0E482569717200CADD3D /* DetectModel.swift */,
+				A21B0E482569717200CADD3D /* StateModel.swift */,
+				A299FC4F25A3A66400319871 /* PassengerViewStateModel.swift */,
+				A2714C5C25A3D518006120E2 /* ModeSelectViewStateModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A2B3E2A92578B1E5007A5DA3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A2B3E2AA2578B208007A5DA3 /* local.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		A2CB0CB7256402AF001C126D /* Protocol */ = {
@@ -193,7 +187,6 @@
 				A298C67025430F23005FB779 /* TaxistView.swift */,
 				A298C67525431726005FB779 /* ListView.swift */,
 				A2D58723254973AB00D8E61C /* ModeSelectView.swift */,
-				A21F45182549C30A0025ADE1 /* TopBarView.swift */,
 				A24086FD254EF55E00F35B67 /* PassengerView.swift */,
 			);
 			path = View;
@@ -220,8 +213,7 @@
 		A2DFAF51253599D700765396 /* callTaxi */ = {
 			isa = PBXGroup;
 			children = (
-				A22564D925699F3200F710E1 /* Modifier */,
-				A22564D525698A8C00F710E1 /* Controller */,
+				A2B3E2A92578B1E5007A5DA3 /* Resources */,
 				A2CB0CB7256402AF001C126D /* Protocol */,
 				A240870A254F656400F35B67 /* Manager */,
 				A298C66425430D2B005FB779 /* Model */,
@@ -368,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2DFAF5F253599D800765396 /* LaunchScreen.storyboard in Resources */,
+				A2B3E2AB2578B208007A5DA3 /* local.plist in Resources */,
 				A2DFAF5C253599D800765396 /* Preview Assets.xcassets in Resources */,
 				A2DFAF59253599D800765396 /* Assets.xcassets in Resources */,
 				A26915C2253C5EE00049892F /* Main.storyboard in Resources */,
@@ -395,23 +388,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2714C5D25A3D518006120E2 /* ModeSelectViewStateModel.swift in Sources */,
 				A298C66025430726005FB779 /* MapView.swift in Sources */,
 				A2DFAF53253599D700765396 /* AppDelegate.swift in Sources */,
 				A240870C254F657800F35B67 /* LocationManager.swift in Sources */,
 				A298C67625431726005FB779 /* ListView.swift in Sources */,
-				A21B0E492569717200CADD3D /* DetectModel.swift in Sources */,
+				A21B0E492569717200CADD3D /* StateModel.swift in Sources */,
+				A299FC5025A3A66400319871 /* PassengerViewStateModel.swift in Sources */,
 				A24086FE254EF55E00F35B67 /* PassengerView.swift in Sources */,
 				A2CB0CB925640308001C126D /* LocationDelegate.swift in Sources */,
 				A2DFAF55253599D700765396 /* SceneDelegate.swift in Sources */,
-				A22564DB25699F4C00F710E1 /* NavigationConfigurationViewModifier.swift in Sources */,
 				A2DC76012542DEB800E942A9 /* DriverView.swift in Sources */,
 				A298C66C25430D9A005FB779 /* Taxist.swift in Sources */,
 				A2DFAF57253599D700765396 /* ContentView.swift in Sources */,
 				A26915C8253C6A7B0049892F /* Constant.swift in Sources */,
 				A2D58724254973AB00D8E61C /* ModeSelectView.swift in Sources */,
 				A298C6582542FB9B005FB779 /* Ext.swift in Sources */,
-				A21F45192549C30A0025ADE1 /* TopBarView.swift in Sources */,
-				A2408706254F113900F35B67 /* NavigationConfigurator.swift in Sources */,
 				A298C67125430F23005FB779 /* TaxistView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
